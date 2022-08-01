@@ -62,7 +62,7 @@
           }
         }
       },
-      "MongoDB.Bson/2.17.0": {
+      "MongoDB.Bson/2.17.1": {
         "type": "package",
         "dependencies": {
           "System.Runtime.CompilerServices.Unsafe": "5.0.0"
@@ -74,12 +74,12 @@
           "lib/netstandard2.1/MongoDB.Bson.dll": {}
         }
       },
-      "MongoDB.Driver/2.17.0": {
+      "MongoDB.Driver/2.17.1": {
         "type": "package",
         "dependencies": {
-          "MongoDB.Bson": "2.17.0",
-          "MongoDB.Driver.Core": "2.17.0",
-          "MongoDB.Libmongocrypt": "1.5.4"
+          "MongoDB.Bson": "2.17.1",
+          "MongoDB.Driver.Core": "2.17.1",
+          "MongoDB.Libmongocrypt": "1.5.5"
         },
         "compile": {
           "lib/netstandard2.1/MongoDB.Driver.dll": {}
@@ -88,12 +88,12 @@
           "lib/netstandard2.1/MongoDB.Driver.dll": {}
         }
       },
-      "MongoDB.Driver.Core/2.17.0": {
+      "MongoDB.Driver.Core/2.17.1": {
         "type": "package",
         "dependencies": {
           "DnsClient": "1.6.1",
-          "MongoDB.Bson": "2.17.0",
-          "MongoDB.Libmongocrypt": "1.5.4",
+          "MongoDB.Bson": "2.17.1",
+          "MongoDB.Libmongocrypt": "1.5.5",
           "SharpCompress": "0.30.1",
           "System.Buffers": "4.5.1"
         },
@@ -144,7 +144,7 @@
           }
         }
       },
-      "MongoDB.Libmongocrypt/1.5.4": {
+      "MongoDB.Libmongocrypt/1.5.5": {
         "type": "package",
         "compile": {
           "lib/netstandard2.1/MongoDB.Libmongocrypt.dll": {}
@@ -292,6 +292,19 @@
             "rid": "win"
           }
         }
+      },
+      "Models/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "MongoDB.Driver": "2.17.1"
+        },
+        "compile": {
+          "bin/placeholder/Models.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Models.dll": {}
+        }
       }
     }
   },
@@ -426,10 +439,10 @@
         "version.txt"
       ]
     },
-    "MongoDB.Bson/2.17.0": {
-      "sha512": "wGUX8GMQ0DYG68u1ENAUtJTx6cmQTt6/BfMjqB+Q+aWu2ZkBZ09mA1QbBU5mcbVqulF5U72bGzxChtjYxaS9Dg==",
+    "MongoDB.Bson/2.17.1": {
+      "sha512": "IBr5w6ygeUCTobiS4J2UlYeIsnjSJvOOf31g60EkRa3NIeyrYs7Y51HeOvJ8r6NPcKv1hLj8xwoop6hDTetAdA==",
       "type": "package",
-      "path": "mongodb.bson/2.17.0",
+      "path": "mongodb.bson/2.17.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -440,15 +453,15 @@
         "lib/netstandard2.0/MongoDB.Bson.xml",
         "lib/netstandard2.1/MongoDB.Bson.dll",
         "lib/netstandard2.1/MongoDB.Bson.xml",
-        "mongodb.bson.2.17.0.nupkg.sha512",
+        "mongodb.bson.2.17.1.nupkg.sha512",
         "mongodb.bson.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver/2.17.0": {
-      "sha512": "NFqjuDNrGNGEsblqoKBoOSUU8vx1UbZjKP3nVhxhGnK9p8ef0t3fyPcjxmYbO5vdFpDQw2A0Ly4dPzyRW3QEug==",
+    "MongoDB.Driver/2.17.1": {
+      "sha512": "A5Yvm3RUdkSYnvKWVb/bZfvhzG+L+t0n80JuUXf0p2QG1TbtqHE9hX/FBK+BoF7sw9rzUTw8VHYeqX5rT0rxdA==",
       "type": "package",
-      "path": "mongodb.driver/2.17.0",
+      "path": "mongodb.driver/2.17.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -459,15 +472,15 @@
         "lib/netstandard2.0/MongoDB.Driver.xml",
         "lib/netstandard2.1/MongoDB.Driver.dll",
         "lib/netstandard2.1/MongoDB.Driver.xml",
-        "mongodb.driver.2.17.0.nupkg.sha512",
+        "mongodb.driver.2.17.1.nupkg.sha512",
         "mongodb.driver.nuspec",
         "packageIcon.png"
       ]
     },
-    "MongoDB.Driver.Core/2.17.0": {
-      "sha512": "bQLdFZNywlApJ5H5KnFXxGik3dZ/VOIUQ7YQniZd9eNmNZFEwEMr+/yoCJ8FigyzOd7iKYOLpmUWGwG2M2e2aQ==",
+    "MongoDB.Driver.Core/2.17.1": {
+      "sha512": "lfuuQvCXcco6mG096PL8xRO+dBdHsDTR3DiYfK/ICHgFlL5RfKlBuE0xClEGKtaZ4Spe28/fF/GUcrrA/yfoAQ==",
       "type": "package",
-      "path": "mongodb.driver.core/2.17.0",
+      "path": "mongodb.driver.core/2.17.1",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -508,7 +521,7 @@
         "lib/netstandard2.0/MongoDB.Driver.Core.xml",
         "lib/netstandard2.1/MongoDB.Driver.Core.dll",
         "lib/netstandard2.1/MongoDB.Driver.Core.xml",
-        "mongodb.driver.core.2.17.0.nupkg.sha512",
+        "mongodb.driver.core.2.17.1.nupkg.sha512",
         "mongodb.driver.core.nuspec",
         "packageIcon.png",
         "runtimes/linux/native/libsnappy64.so",
@@ -520,10 +533,10 @@
         "runtimes/win/native/snappy64.dll"
       ]
     },
-    "MongoDB.Libmongocrypt/1.5.4": {
-      "sha512": "JQrfonPIGey2n38tYmhkYOjmoHeGCwvbEru/G7zciYcx198neZerSPylIt6kTGtpGQDMhjCg0Nvt9eCBm6TWZQ==",
+    "MongoDB.Libmongocrypt/1.5.5": {
+      "sha512": "0DV4l2PjXirSJHD/b+LpOK3IfUDvkbpvvZBM2w1aYL6E/4vbhfyr/FP5laDNx2zRylqN1hIZO+EL7NgO/5GpVg==",
       "type": "package",
-      "path": "mongodb.libmongocrypt/1.5.4",
+      "path": "mongodb.libmongocrypt/1.5.5",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -544,7 +557,7 @@
         "lib/net472/MongoDB.Libmongocrypt.dll",
         "lib/netstandard2.0/MongoDB.Libmongocrypt.dll",
         "lib/netstandard2.1/MongoDB.Libmongocrypt.dll",
-        "mongodb.libmongocrypt.1.5.4.nupkg.sha512",
+        "mongodb.libmongocrypt.1.5.5.nupkg.sha512",
         "mongodb.libmongocrypt.nuspec",
         "runtimes/linux/native/libmongocrypt.so",
         "runtimes/osx/native/libmongocrypt.dylib",
@@ -812,11 +825,17 @@
         "useSharedDesignerContext.txt",
         "version.txt"
       ]
+    },
+    "Models/1.0.0": {
+      "type": "project",
+      "path": "../UFOTracker.Models/Models.csproj",
+      "msbuildProject": "../UFOTracker.Models/Models.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
-      "MongoDB.Driver >= 2.17.0",
+      "Models >= 1.0.0",
+      "MongoDB.Driver >= 2.17.1",
       "Swashbuckle.AspNetCore >= 6.2.3"
     ]
   },
@@ -826,9 +845,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\4-kap\\source\\repos\\UFOTracker\\UFOTracker\\UFOTracker.csproj",
-      "projectName": "UFOTracker",
-      "projectPath": "C:\\Users\\4-kap\\source\\repos\\UFOTracker\\UFOTracker\\UFOTracker.csproj",
+      "projectUniqueName": "C:\\Users\\4-kap\\source\\repos\\UFOTracker\\UFOTracker\\UFOTrackerApi.csproj",
+      "projectName": "UFOTrackerApi",
+      "projectPath": "C:\\Users\\4-kap\\source\\repos\\UFOTracker\\UFOTracker\\UFOTrackerApi.csproj",
       "packagesPath": "C:\\Users\\4-kap\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\4-kap\\source\\repos\\UFOTracker\\UFOTracker\\obj\\",
       "projectStyle": "PackageReference",
@@ -846,7 +865,11 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "C:\\Users\\4-kap\\source\\repos\\UFOTracker\\UFOTracker.Models\\Models.csproj": {
+              "projectPath": "C:\\Users\\4-kap\\source\\repos\\UFOTracker\\UFOTracker.Models\\Models.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
@@ -861,7 +884,7 @@
         "dependencies": {
           "MongoDB.Driver": {
             "target": "Package",
-            "version": "[2.17.0, )"
+            "version": "[2.17.1, )"
           },
           "Swashbuckle.AspNetCore": {
             "target": "Package",

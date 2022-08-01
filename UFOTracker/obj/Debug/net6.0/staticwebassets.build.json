@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "WNfFGw1M4BH+SLdlgLa6pg3jLCl+ek60Iz7P48PGPJY=",
-  "Source": "UFOTracker",
-  "BasePath": "_content/UFOTracker",
+  "Hash": "jYIPZbMG9CSdqZgMyLs4sQ5VwqUIjDqkbieDKzcHjcg=",
+  "Source": "UFOTrackerApi",
+  "BasePath": "_content/UFOTrackerApi",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
