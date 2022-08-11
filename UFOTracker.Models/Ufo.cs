@@ -25,8 +25,8 @@ namespace UFOTracker.Models
         [BsonElement("date posted")]
         public DateTime? DatePosted { get; set; }
         [BsonElement("latitude")]
-        public float? Latitude { get; set; }
+        public string? Latitude { get; set; }
         [BsonElement("longitude")]
-        public float? Longitude { get; set; }
+        public string? Longitude { get; set; }
     }
 }

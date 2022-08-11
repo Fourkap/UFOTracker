@@ -1,0 +1,248 @@
+﻿
+<div class="text-center">
+    <h1 class="display-4">UFO</h1>
+</div>
+@*<button class="btn btn-lg mb-3 newufo" asp-controller="Ufo" asp-action="Create">Declare an Ufo</button>*@
+<input type="button"
+    class="btn btn-lg mb-3 newufo"
+         value="Declare an Ufo"
+         onclick="location.href='@Url.Action("Create", "Ufo")'" />
+<div class="row">
+    <div class="col-sm-4">
+        <div class="row">
+
+            @foreach (UFOTracker.Models.Ufo ufo in Model.Ufos)
+            {
+                <div class="col-sm-6">
+                    <div class="card text-bg-light border-dark mb-3" style="margin:3px;">
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <p class="card-text">Date and Time: @ufo.DateAndTime.ToString().Substring(0,16)</p>
+                                </div>
+                                <div class="col-sm-6">
+                                    <p class="card-text">Posted Date: @ufo.DatePosted.ToString().Substring(0,10)</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-4">
+                                    <p class="card-text">City: @ufo.City</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="card-text">State: @ufo.State</p>
+                                </div>
+                                <div class="col-sm-4">
+                                    <p class="card-text">Country: @ufo.Country</p>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <p class="card-text">Shape: @ufo.Shape</p>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <p class="card-text">Comments: @ufo.Comments</p>
+                            </div>
+                            <div class="row">
+                                <p class="card-text">Latitude: @ufo.Latitude</p>
+                            </div>
+                            <div class="row">
+                                <p class="card-text">Longitude: @ufo.Longitude</p>
+                            </div>
+                            @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                        </div>
+                        <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Edit" asp-route-id="@ufo.Id">Edit</a>
+                        <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Delete" asp-route-id="@ufo.Id">Delete</a>
+                    </div>
+
+                </div>
+            }
+            @*  @foreach (var page in @Model.page)
+            {
+
+            }*@
+            @{
+                var index = @Model.Page;
+                var first = 1;
+                var final = @Model.Count + 2;
+                var p1 = 5;
+                var p2 = 5;
+                var indexplus = index + 1;
+                var indexmoins = index - 1;
+                var last = final - 1;
+            }
+            @if (index <= 5)
+            {
+                p1 = index;
+                p1 -= 1;
+            }
+            @if (index > final - 5)
+            {
+                p2 = final - index;
+            }
+
+
+            <nav aria-label="Page navigation example" class=" mb-5 pb-3 mt-3">
+                <ul class="pagination">
+                    @if (index == first)
+                    {
+                        <li class="page-item disabled">
+                            <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Index" asp-route-id="@first">First</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Index" asp-route-id="@first">First</a>
+                        </li>
+                    }
+
+
+                    @if (index == 1)
+                    {
+                        <li class="page-item disabled">
+                            <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Index" asp-route-id="@indexmoins">Previous</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Index" asp-route-id="@indexmoins">Previous</a>
+                        </li>
+                    }
+
+                    @for (int i = index - p1; i < index + p2; i++)
+                    {
+                        if (i == index)
+                        {
+                            <li class="page-item active"><a class="page-link" asp-controller="Ufo" asp-action="Index" asp-route-id="@i">@i</a></li>
+                        }
+                        else
+                        {
+                            <li class="page-item"><a class="page-link" asp-controller="Ufo" asp-action="Index" asp-route-id="@i">@i</a></li>
+                        }
+
+                    }
+                    @if (index == final - 1)
+                    {
+                        <li class="page-item disabled">
+                            <a class="page-link" asp-controller="Ufo" asp-action="Index" asp-route-id="@indexplus">Next</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a class="page-link" asp-controller="Ufo" asp-action="Index" asp-route-id="@indexplus">Next</a>
+                        </li>
+                    }
+                    @if (index == final - 1)
+                    {
+                        <li class="page-item disabled">
+                            <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Index" asp-route-id="@last">Last</a>
+                        </li>
+                    }
+                    else
+                    {
+                        <li class="page-item">
+                            <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Index" asp-route-id="@last">Last</a>
+                        </li>
+                    }
+
+
+                </ul>
+            </nav>
+        </div>
+    </div>
+    <div class="col-sm-8">
+
+
+        <!--The div element for the map -->
+        <div id="map"></div>
+
+
+
+        <script>
+
+            // Initialize and add the map
+            function initMap() {
+                // The location of Uluru
+                const paris = { lat: 48.866667, lng: 2.333333 };
+                // The map, centered at Uluru
+                const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 3,
+                    center: paris,
+                });
+
+
+
+
+
+            @foreach (UFOTracker.Models.Ufo markers in Model.Ufos)
+            {
+                <text>
+                                var myLatlng = new google.maps.LatLng(@markers.Latitude, @markers.Longitude);
+                    var test = new google.maps.Marker({
+                        position: myLatlng,
+                        title: "@markers.City",
+                        map: map,
+
+                    });
+                </text>
+
+                @if ((markers.Shape == "unknown") || (markers.Shape == "other") || (markers.Shape == "changing"))
+                {
+                      <text>
+                                             var icon = {
+                            url: '/Images/default.png',
+                            scaledSize: new google.maps.Size(50, 50)
+                        };
+                console.log(icon);
+                        test.setIcon(icon);
+                    </text>
+                  
+                }
+                else
+                {
+                      <text>
+                                             var icon = {
+                            url: '/Images/' + "@markers.Shape" +'.png',
+                            scaledSize: new google.maps.Size(50, 50)
+                        };
+                console.log(icon);
+                        test.setIcon(icon);
+                    </text>
+                }
+                <text>
+
+
+                                    var infoWindowOptions = {
+                        content: '<h3>@markers.City</h3>'
+                            + 'Shape: ' + '@markers.Shape'
+                    };
+
+                    var infoWindow = new google.maps.InfoWindow(infoWindowOptions);
+
+                    test.infoWindow = infoWindow;
+                    addinfo(test);
+
+
+                </text>
+            }
+                    function addinfo(test) {
+                        google.maps.event.addListener(test, 'click', function() {
+                            test.infoWindow.open(map, test);
+                        });
+                    }
+
+            }
+
+
+
+            window.initMap = initMap;
+
+        </script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=&callback=initMap&v=weekly"
+                defer></script>
+    </div>
+</div>

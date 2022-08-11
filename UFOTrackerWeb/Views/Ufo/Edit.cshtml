@@ -1,0 +1,102 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model UFOTracker.Models.Ufo
+@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+<div class="text-center">
+    <h1 class="display-4">Edit An Ufo</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-7" style="float:none;margin:auto;">
+        <div class="card text-bg-light border-dark mb-3" style="margin:3px;">
+            <div class="card-body">
+
+                <div class="row">
+                    @using (Html.BeginForm("Edit", "Ufo", FormMethod.Post))
+                    {
+                    <input type="hidden" name="Id" value="@ViewBag.id">
+                    <input type="hidden" name="DatePosted" value="@Model.DatePosted">
+                    <div class="row">        
+                    <div class="col-md-4">
+                        <label for="City" class="form-label">City</label>
+                        <input type="text" class="form-control" id="City" name="City" value="@Model.City" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid city.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="State" class="form-label">State</label>
+                        <input type="text" class="form-control" id="State" name="State" value="@Model.State" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid state.
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="Country" class="form-label">Country</label>
+                        <input type="text" class="form-control" id="Country" name="Country" value="@Model.Country" required>
+                        <div class="invalid-feedback">
+                            Please provide a valid country.
+                        </div>
+                    </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="Shape" class="form-label">Shape</label>
+                        <input type="text" class="form-control" id="Shape" name="Shape" value="@Model.Shape" required>
+                        <div class="invalid-feedback">
+                            Please provide a shape.
+                        </div>
+                    </div>
+                    <br />
+                    <div class="form-floating">
+                        <textarea class="form-control" placeholder="Leave a comment here" id="Comments" style="height: 100px" name="Comments" >@Model.Comments</textarea>
+                        <label for="floatingTextarea2">Comments</label>
+                    </div>
+                    <br />
+                    <div class="col-md-4">
+                        <label for="DateandTime" class="form-label">Date and Time</label>
+                        <input type="datetime" class="form-control" id="DateandTime" name="DateandTime" value="@Model.DateAndTime.Value.ToLocalTime().ToString()" required>
+                        <div class="invalid-feedback">
+                        </div>
+                    </div>
+                    <br />
+                    <div class="row mt-2">
+                        <div class="col-md-4">
+                            <label for="Latitude" class="form-label">Latitude</label>
+                            <input type="text" class="form-control" id="Latitude" name="Latitude" value="@Model.Latitude" required>
+                            <div class="invalid-feedback">
+                                Please provide a Latitude.
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <label for="Longitude" class="form-label">Longitude</label>
+                            <input type="text" class="form-control" id="Longitude" name="Longitude" value="@Model.Longitude" required>
+                            <div class="invalid-feedback">
+                                Please provide a Longitude.
+                            </div>
+                        </div>
+                        <div class="col-md-4" style="
+                             padding-top: 31px;">
+                            <input type="button"
+                                   class="btn mb-3 newufo"
+                                   value="Get my current position"
+                                   onclick="GetPosition();" />
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <button class="btn btn-primary" type="submit">Submit form</button>
+                    </div>
+                     }
+                </div>
+                
+            </div>
+
+        </div>
+    </div>
+</div>

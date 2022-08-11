@@ -15,20 +15,24 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\4-kap\source\repos\UFOTracker\UFOTrackerWeb
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
-build_metadata.AdditionalFiles.CssScope = 
-
-[C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
-build_metadata.AdditionalFiles.CssScope = 
-
 [C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/Ufo/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWZvXENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/Ufo/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWZvXEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/Ufo/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVWZvXEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/4-kap/source/repos/UFOTracker/UFOTrackerWeb/Views/_ViewImports.cshtml]

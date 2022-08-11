@@ -9,10 +9,29 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+}
+#map {
+    height: 50%;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+}
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 2000px !important;
+    }
+}
+
+.newufo {
+    background-color: #723ddb !important;
+    color: #fff !important;
+}
+.newufo:hover {
+    background-color: #8e64e4 !important;
 }
