@@ -1,12 +1,12 @@
 ﻿
 <div class="text-center">
-    <h1 class="display-4">UFO</h1>
+    <h1 class="display-4">UFO Tracker</h1>
 </div>
 @*<button class="btn btn-lg mb-3 newufo" asp-controller="Ufo" asp-action="Create">Declare an Ufo</button>*@
 <input type="button"
-    class="btn btn-lg mb-3 newufo"
-         value="Declare an Ufo"
-         onclick="location.href='@Url.Action("Create", "Ufo")'" />
+       class="btn btn-lg mb-3 newufo"
+       value="Declare an Ufo"
+       onclick="location.href='@Url.Action("Create", "Ufo")'" />
 <div class="row">
     <div class="col-sm-4">
         <div class="row">
@@ -51,9 +51,19 @@
                                 <p class="card-text">Longitude: @ufo.Longitude</p>
                             </div>
                             @*<a href="#" class="btn btn-primary">Go somewhere</a>*@
+                            <hr>
+                            <div class="row">
+                                <div class="col-sm-2">
+@*                                    <button class="btn btn-sm btn-info" tabindex="-1" asp-controller="Ufo" asp-action="Edit" asp-route-id="@ufo.Id">Edit</button>
+*@                                    <a class="btn btn-sm btn-info" asp-controller="Ufo" asp-action="Edit" asp-route-id="@ufo.Id">Edit </a>
+                                </div>
+                                <div class="col-sm-2">
+@*                                 <button class="btn btn-sm btn-danger" tabindex="-1" asp-controller="Ufo" asp-action="Delete" asp-route-id="@ufo.Id">Delete</button>
+*@                                 <a class="btn btn-sm btn-danger" asp-controller="Ufo" asp-action="Delete" asp-route-id="@ufo.Id">Delete </a>
+                                </div>
+                            </div>
                         </div>
-                        <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Edit" asp-route-id="@ufo.Id">Edit</a>
-                        <a class="page-link" tabindex="-1" asp-controller="Ufo" asp-action="Delete" asp-route-id="@ufo.Id">Delete</a>
+
                     </div>
 
                 </div>
@@ -181,7 +191,7 @@
             @foreach (UFOTracker.Models.Ufo markers in Model.Ufos)
             {
                 <text>
-                                var myLatlng = new google.maps.LatLng(@markers.Latitude, @markers.Longitude);
+                                                                var myLatlng = new google.maps.LatLng(@markers.Latitude, @markers.Longitude);
                     var test = new google.maps.Marker({
                         position: myLatlng,
                         title: "@markers.City",
@@ -192,31 +202,31 @@
 
                 @if ((markers.Shape == "unknown") || (markers.Shape == "other") || (markers.Shape == "changing"))
                 {
-                      <text>
-                                             var icon = {
+                    <text>
+                                                                                     var icon = {
                             url: '/Images/default.png',
                             scaledSize: new google.maps.Size(50, 50)
                         };
-                console.log(icon);
+                        console.log(icon);
                         test.setIcon(icon);
                     </text>
-                  
+
                 }
                 else
                 {
-                      <text>
-                                             var icon = {
-                            url: '/Images/' + "@markers.Shape" +'.png',
+                    <text>
+                                                                                     var icon = {
+                            url: '/Images/' + "@markers.Shape" + '.png',
                             scaledSize: new google.maps.Size(50, 50)
                         };
-                console.log(icon);
+                        console.log(icon);
                         test.setIcon(icon);
                     </text>
                 }
                 <text>
 
 
-                                    var infoWindowOptions = {
+                                                                    var infoWindowOptions = {
                         content: '<h3>@markers.City</h3>'
                             + 'Shape: ' + '@markers.Shape'
                     };
