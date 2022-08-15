@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">UfoTrackerAndroid</string>
+    <string name="title_home">Home</string>
+    <string name="title_new">Declare an Ufo</string>
+</resources>
