@@ -113,9 +113,9 @@ namespace UfoTrackerAndroid
                     StartActivity(nextActivity);
                     return true;
 
-                    return true;
                 case Resource.Id.navigation_dashboard:
-                    
+                    Intent addActivity = new Intent(this, typeof(AddUfo));
+                    StartActivity(addActivity);
                     return true;
             }
             return false;
@@ -147,7 +147,6 @@ namespace UfoTrackerAndroid
          */
         void nextBtn_Click(object sender, System.EventArgs e)
         {
-
             currentPage += 1;
             uri = "https://10.0.2.2:7053/Ufo?page=" + currentPage + "&pageSize=10";
             toggleButtons();

@@ -1,3 +1,9 @@
+UfoTrackerAndroid.AddUfo, UfoTrackerAndroid;crc64e5679abd0ec9235b.AddUfo
+UfoTrackerAndroid.AddUfo;crc64e5679abd0ec9235b.AddUfo
+ufotrackerandroid.AddUfo;crc64e5679abd0ec9235b.AddUfo
+UfoTrackerAndroid.EditUfo, UfoTrackerAndroid;crc64e5679abd0ec9235b.EditUfo
+UfoTrackerAndroid.EditUfo;crc64e5679abd0ec9235b.EditUfo
+ufotrackerandroid.EditUfo;crc64e5679abd0ec9235b.EditUfo
 UfoTrackerAndroid.MainActivity, UfoTrackerAndroid;crc64e5679abd0ec9235b.MainActivity
 UfoTrackerAndroid.MainActivity;crc64e5679abd0ec9235b.MainActivity
 ufotrackerandroid.MainActivity;crc64e5679abd0ec9235b.MainActivity

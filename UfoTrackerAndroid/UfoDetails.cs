@@ -22,8 +22,7 @@ namespace UfoTrackerAndroid
         TextView textMessage;
         HttpClient client;
         Ufo ufo;
-        private int currentPage = 1;
-        private Button nextBtn, prevBtn;
+        private Button delete, update;
         String uri = "https://10.0.2.2:7053/";
         int totalitems;
 
@@ -42,12 +41,20 @@ namespace UfoTrackerAndroid
             string id = Intent.GetStringExtra("id");
             uri += "Ufo/" + id;
 
-            Button delete = FindViewById<Button>(Resource.Id.Delete);
+            delete = FindViewById<Button>(Resource.Id.Delete);
 
 
             delete.Click += (object sender, EventArgs e) =>
             {
                 DeleteUfo(id);
+            };
+
+            update = FindViewById<Button>(Resource.Id.Update);
+
+
+            update.Click += (object sender, EventArgs e) =>
+            {
+                UpdateUfo(id);
             };
             recupAPI(uri);
 
@@ -60,7 +67,7 @@ namespace UfoTrackerAndroid
 
         public async void DeleteUfo(string id)
         {
-            uri += "Ufo/" + id;
+            uri = "https://10.0.2.2:7053/Ufo/" + id;
             try
             {
                 HttpResponseMessage response = await client.DeleteAsync(uri);
@@ -76,6 +83,12 @@ namespace UfoTrackerAndroid
             }
         }
 
+        public async void UpdateUfo(string id)
+        {
+            Intent nextActivity = new Intent(this, typeof(EditUfo));
+            nextActivity.PutExtra("id", id);
+            StartActivity(nextActivity);
+        }
 
         public async void recupAPI(string uri)
         {
