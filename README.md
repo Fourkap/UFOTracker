@@ -130,8 +130,5 @@ les icones des markers sont également spécifiquent selon la forme de l'Ufo ape
 
 https://user-images.githubusercontent.com/28070766/185214625-e3b83589-dee9-4199-84ce-66e60ac85f20.mp4
 
---- 
-
-## Features intéressantes pour la suite 
 
 
