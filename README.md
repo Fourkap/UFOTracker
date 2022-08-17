@@ -105,7 +105,7 @@ https://user-images.githubusercontent.com/28070766/185207877-ddab0356-b2fa-4c29-
 ### Autres fonctionnalités CRUD et autres
 
 Bien entendu l'application permet également la modification et la suppression des déclarations. <br>
-Elle dispose également d'une pagination rattacher à celle de l'Api.
+Elle dispose également d'une pagination rattachée à celle de l'Api.
 
 ![Web_Other](ImgForDoc/Web_Other.png)
 
@@ -113,7 +113,7 @@ Elle dispose également d'une pagination rattacher à celle de l'Api.
 
 ## UfoTracker.Android
 
-UfoTracker Android est une application Xamarin elle permet les mêmes fonctionnalités que l'application web pour la gestion et la déclaration d'UFO. 
+UfoTracker Android est une application Xamarin, elle permet les mêmes fonctionnalités que l'application web pour la gestion et la déclaration d'UFO. 
 
 ![Android-Home](ImgForDoc/Android-Home.png)
 
