@@ -117,6 +117,15 @@ UfoTracker Android est une application Xamarin elle permet les mêmes fonctionna
 
 ![Android-Home](ImgForDoc/Android-Home.png)
 
+### Opérations CRUD et pagination
+
+L'application Android permet d'effectuer des opérations CRUD sur le système ainsi que de défiler les milliers de déclarations. 
+
+
+https://user-images.githubusercontent.com/28070766/185213525-2d22fbfc-8d02-4e64-a668-0a66218c919b.mp4
+
+
+
 ## Features intéressantes pour la suite 
 
 
