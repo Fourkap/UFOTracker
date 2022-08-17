@@ -106,6 +106,7 @@ https://user-images.githubusercontent.com/28070766/185207877-ddab0356-b2fa-4c29-
 
 Bien entendu l'application permet également la modification et la suppression des déclarations. <br>
 Elle dispose également d'une pagination rattacher a celle de l'Api.
+
 ![Web_Other](ImgForDoc/Web_Other.png)
 
 
