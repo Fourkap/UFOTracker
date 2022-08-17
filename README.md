@@ -1,13 +1,13 @@
 # UfoTracker
 
-Ufo Tracker est un ensemble d'applications développée en C#(.NET) qui permet la déclaration d'un OVNI ou de PAN(phénomènes aérospatiaux non identifiés).
-Ces applications permettent également le suivi de ces phenomènes a parcourir autour de cartes.
+Ufo Tracker est un ensemble d'applications développée en C#(.NET) qui permet la déclaration d'un OVNI ou de PAN (phénomènes aérospatiaux non identifiés).
+Ces applications permettent également le suivi de ces phénomènes a parcourir autour de cartes.
 
 ---
 
 ## Data
 
-La data utilisée dans ces aplications provient du NUFORC (National UFO Reporting Center) elle comprend un peu moins de 90 000 témoignages recesner par le NUFORC. Ces data seront completer par celle du GEIPAN (Groupe d'études et d'informations sur les phénomènes aérospatiaux non identifiés) dans un futur proches.<br>
+La data utilisée dans ces applications provient du NUFORC (National UFO Reporting Center) elle comprend un peu moins de 90 000 témoignages recensé par le NUFORC. Ces data seront completé par celle du GEIPAN (Groupe d'études et d'informations sur les phénomènes aérospatiaux non identifiés) dans un futur proches.<br>
 Data du NUFORC a télécharger ici:  [ufo.json](ufo.json)
 
 ![DataNavicat](ImgForDoc/data_navicat.png)
@@ -29,7 +29,7 @@ La solution .NET regroupe 4 entitées.
 ## UfoTracker.Models
 
 UfoTracker Models est une bibliothèque de classe C# .NET qui permet d'utiliser les classes dans l'ensemble des projets constituants la solution. 
-Elle est compser de deux modèles:
+Elle est composée de deux modèles:
 - Ufo.cs
 
 ``` C#
@@ -76,7 +76,7 @@ public class PageMongo
 --- 
 ## UfoTracker.API
 
-UfoTracker Api est une Api Rest développer en C# .NET qui est en charge de communiquer avec la base MongoDb et qui permet de fournir et de récuperer l'ensemble des données des applications web et mobile.
+UfoTracker Api est une Api Rest développer en C# .NET qui est en charge de communiquer avec la base MongoDb et qui permet de fournir et de récupérer l'ensemble des données des applications web et mobile.
 
 Page Mongo permet d'avoir une pagination dans le GetAll.
 
@@ -85,12 +85,12 @@ Page Mongo permet d'avoir une pagination dans le GetAll.
 --- 
 ## UfoTracker.WEB
 
-UfoTracker Web est une application Web ASP.NET qui s'appuye sur UfoTracker.API et UfoTracker.Models. Elle dispose de plusieurs features que nous allons parcourir.
+UfoTracker Web est une application Web ASP.NET qui s'appuie sur UfoTracker.API et UfoTracker.Models. Elle dispose de plusieurs features que nous allons parcourir.
 
 ![Web_Home](ImgForDoc/Web_Home.png)
 
 ### Carte 
-La carte utilise l'api de google maps. elle affiche des markers correspondant à la page. 
+La carte utilise l'api de google maps. Elle affiche des markers correspondant à la page. 
 les icones des markers sont spécifiquent selon la forme de l'Ufo aperçu. 
 
 https://user-images.githubusercontent.com/28070766/185203747-1ad9dd7f-c6b8-4a72-9c43-f03777078d92.mp4
@@ -98,14 +98,14 @@ https://user-images.githubusercontent.com/28070766/185203747-1ad9dd7f-c6b8-4a72-
 ### Déclarer un UFO
 L'application permet une déclaration d'une apparition rapidement grâce à son formulaire.
 
-Pour simplifier la complexité de l'utilisateur l'outil permet de prendre la date et l'heure exact de la personne ainsi que sa latitude et sa longitude grâce à la localisation de son naviguateur. 
+Pour simplifier la complexité de l'utilisateur l'outil permet de prendre la date et l'heure exact de la personne ainsi que sa latitude et sa longitude grâce à la localisation de son navigateur. 
 
 https://user-images.githubusercontent.com/28070766/185207877-ddab0356-b2fa-4c29-a7ad-18c6284c51df.mp4
 
 ### Autres fonctionnalités CRUD et autres
 
 Bien entendu l'application permet également la modification et la suppression des déclarations. <br>
-Elle dispose également d'une pagination rattacher a celle de l'Api.
+Elle dispose également d'une pagination rattacher à celle de l'Api.
 
 ![Web_Other](ImgForDoc/Web_Other.png)
 
