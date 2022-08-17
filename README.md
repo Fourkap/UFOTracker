@@ -94,6 +94,7 @@ La carte utilise l'api de google maps. Elle affiche des markers correspondant à
 Les icones des markers sont spécifiques selon la forme de l'Ufo aperçu. 
 
 🎬
+
 https://user-images.githubusercontent.com/28070766/185203747-1ad9dd7f-c6b8-4a72-9c43-f03777078d92.mp4
 
 ### Déclarer un UFO
@@ -102,6 +103,7 @@ L'application permet une déclaration d'une apparition rapidement grâce à son 
 Pour simplifier la complexité de l'utilisateur l'outil permet de prendre la date et l'heure exact de la personne ainsi que sa latitude et sa longitude grâce à la localisation de son navigateur. 
 
 🎬
+
 https://user-images.githubusercontent.com/28070766/185207877-ddab0356-b2fa-4c29-a7ad-18c6284c51df.mp4
 
 ### Autres fonctionnalités CRUD et autres
@@ -124,6 +126,7 @@ UfoTracker Android est une application Xamarin, elle permet les mêmes fonctionn
 L'application Android permet d'effectuer des opérations CRUD sur le système ainsi que de défiler les milliers de déclarations. 
 
 🎬
+
 https://user-images.githubusercontent.com/28070766/185213525-2d22fbfc-8d02-4e64-a668-0a66218c919b.mp4
 
 ### Carte 
@@ -133,6 +136,7 @@ Les icones des markers sont également spécifiques selon la forme de l'Ufo aper
 ![Android_Map](ImgForDoc/Android_Map.png)
 
 🎬
+
 https://user-images.githubusercontent.com/28070766/185214625-e3b83589-dee9-4199-84ce-66e60ac85f20.mp4
 
 
