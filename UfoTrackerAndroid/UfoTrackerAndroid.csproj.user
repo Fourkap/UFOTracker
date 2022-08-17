@@ -3,9 +3,9 @@
   <PropertyGroup>
     <AndroidDesignerPreferredTheme>AppTheme</AndroidDesignerPreferredTheme>
     <AndroidDesignerPreferredDevice>Nexus 5</AndroidDesignerPreferredDevice>
-    <DefaultDevice>pixel_4a_-_api_26</DefaultDevice>
-    <SelectedDevice>pixel_4a_-_api_26</SelectedDevice>
+    <DefaultDevice>pixel_5_-_api_30</DefaultDevice>
+    <SelectedDevice>pixel_5_-_api_30</SelectedDevice>
     <SelectedPlatformGroup>Emulator</SelectedPlatformGroup>
-    <ActiveDebugProfile>pixel_4a_-_api_26</ActiveDebugProfile>
+    <ActiveDebugProfile>pixel_5_-_api_30</ActiveDebugProfile>
   </PropertyGroup>
 </Project>

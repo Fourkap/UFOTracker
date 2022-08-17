@@ -60,6 +60,17 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content" />
         </LinearLayout>
+         <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="1dp">
+            <Button
+                android:text="Show on Maps"
+                android:id="@+id/maps"
+                android:layout_width="390dp"
+                android:layout_height="match_parent"/>
+            </LinearLayout>
     </LinearLayout>
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/navigation"

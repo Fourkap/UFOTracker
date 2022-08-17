@@ -14,6 +14,7 @@ using System.Net.Http;
 using UFOTracker.Models;
 using Xamarin.Essentials;
 
+
 namespace UfoTrackerAndroid
 {
     [Activity(Label = "@string/app_name", Theme = "@style/AppTheme", MainLauncher = true)]
@@ -38,7 +39,6 @@ namespace UfoTrackerAndroid
 
             nextBtn = FindViewById<Button>(Resource.Id.nextBtn);
             prevBtn = FindViewById<Button>(Resource.Id.prevBtn);
-
             //BUTTON CLICKS
             nextBtn.Click += nextBtn_Click;
             prevBtn.Click += prevBtn_Click;
@@ -95,6 +95,12 @@ namespace UfoTrackerAndroid
                     lst1.SetAdapter(ListAdapter);
                     lst1.ItemClick += lst1_ItemClick;
 
+                    Button maps = FindViewById<Button>(Resource.Id.maps);
+                    maps.Click += (object sender, EventArgs e) =>
+                    {
+                        showMaps(finaltest);
+                    };
+                   
                 }
             }
             catch (Exception e)
@@ -103,7 +109,14 @@ namespace UfoTrackerAndroid
             }
 
         }
-        
+
+        public void showMaps(string finaltest)
+        {
+            Intent mapsActivity = new Intent(this, typeof(Maps));
+            mapsActivity.PutExtra("ufos", finaltest);
+            StartActivity(mapsActivity);
+        }
+
         public bool OnNavigationItemSelected(IMenuItem item)
         {
             switch (item.ItemId)

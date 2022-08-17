@@ -46,9 +46,17 @@
               "target": "Package",
               "version": "[4.3.4, )"
             },
+            "Xamarin.Android.Support.Design": {
+              "target": "Package",
+              "version": "[28.0.0.3, )"
+            },
             "Xamarin.AndroidX.AppCompat": {
               "target": "Package",
               "version": "[1.2.0.5, )"
+            },
+            "Xamarin.AndroidX.Lifecycle.LiveData": {
+              "target": "Package",
+              "version": "[2.4.1.2, )"
             },
             "Xamarin.Essentials": {
               "target": "Package",
@@ -57,6 +65,10 @@
             "Xamarin.Google.Android.Material": {
               "target": "Package",
               "version": "[1.0.0.1, )"
+            },
+            "Xamarin.GooglePlayServices.Maps": {
+              "target": "Package",
+              "version": "[118.0.2.1, )"
             }
           }
         }
