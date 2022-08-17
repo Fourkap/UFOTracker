@@ -18,7 +18,7 @@ Data du NUFORC a télécharger ici:  [ufo.json](ufo.json)
 ![ArchitectureUfotracker](ImgForDoc/Architecture_UfoTracker.png)
 
 La partie base de données se repose sur MongoDB.<br> 
-La solution .NET regroupe 4 entitées. 
+La solution .NET regroupe 4 entités. 
 - UfoTrackerModels
 - UfoTrackerApi
 - UfoTrackerWeb
