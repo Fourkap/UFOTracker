@@ -28,7 +28,7 @@ La solution .NET regroupe 4 entités.
 
 ## UfoTracker.Models
 
-UfoTracker Models est une bibliothèque de classe C# .NET qui permet d'utiliser les classes dans l'ensemble des projets constituants la solution. 
+UfoTracker Models est une bibliothèque de classe C# .NET qui permet d'utiliser les classes dans l'ensemble des projets constituant la solution. 
 Elle est composée de deux modèles:
 - Ufo.cs
 
