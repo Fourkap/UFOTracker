@@ -115,7 +115,7 @@ Elle dispose également d'une pagination rattacher a celle de l'Api.
 
 UfoTracker Android est une application Xamarin elle permet les mêmes fonctionnalités que l'application web pour la gestion et la déclaration d'UFO. 
 
-![Android_Home](ImgForDoc/Android_Home.png)
+![Android-Home](ImgForDoc/Android-Home.png)
 
 ## Features intéressantes pour la suite 
 
