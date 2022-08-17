@@ -90,8 +90,8 @@ UfoTracker Web est une application Web ASP.NET qui s'appuye sur UfoTracker.API e
 ![Web_Home](ImgForDoc/Web_Home.png)
 
 ### Carte 
-La carte utilise l'api de google maps. elle affiche des markers correspondant a la page. 
-les icones des markers sont spécifique selon la forme de l'Ufo aperçu. 
+La carte utilise l'api de google maps. elle affiche des markers correspondant à la page. 
+les icones des markers sont spécifiquent selon la forme de l'Ufo aperçu. 
 
 https://user-images.githubusercontent.com/28070766/185203747-1ad9dd7f-c6b8-4a72-9c43-f03777078d92.mp4
 
@@ -124,7 +124,13 @@ L'application Android permet d'effectuer des opérations CRUD sur le système ai
 
 https://user-images.githubusercontent.com/28070766/185213525-2d22fbfc-8d02-4e64-a668-0a66218c919b.mp4
 
+### Carte 
+La carte utilise google maps. elle affiche des markers correspondant a la page. 
+les icones des markers sont également spécifiquent selon la forme de l'Ufo aperçu.
 
+https://user-images.githubusercontent.com/28070766/185214625-e3b83589-dee9-4199-84ce-66e60ac85f20.mp4
+
+--- 
 
 ## Features intéressantes pour la suite 
 
