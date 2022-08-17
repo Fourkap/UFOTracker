@@ -76,7 +76,7 @@ public class PageMongo
 --- 
 ## UfoTracker.API
 
-UfoTracker Api est une Api Rest développer en C# .NET qui est en charge de communiquer avec la base MongoDb et qui permet de fournir et de récupérer l'ensemble des données des applications web et mobile.
+UfoTracker Api est une Api Rest développée en C# .NET qui est en charge de communiquer avec la base MongoDb et qui permet de fournir et de récupérer l'ensemble des données des applications web et mobile.
 
 Page Mongo permet d'avoir une pagination dans le GetAll.
 
@@ -91,7 +91,7 @@ UfoTracker Web est une application Web ASP.NET qui s'appuie sur UfoTracker.API e
 
 ### Carte 
 La carte utilise l'api de google maps. Elle affiche des markers correspondant à la page. 
-les icones des markers sont spécifiquent selon la forme de l'Ufo aperçu. 
+Les icones des markers sont spécifiquent selon la forme de l'Ufo aperçu. 
 
 https://user-images.githubusercontent.com/28070766/185203747-1ad9dd7f-c6b8-4a72-9c43-f03777078d92.mp4
 
