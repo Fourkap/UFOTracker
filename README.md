@@ -128,6 +128,8 @@ https://user-images.githubusercontent.com/28070766/185213525-2d22fbfc-8d02-4e64-
 La carte utilise google maps. elle affiche des markers correspondant a la page. 
 Les icones des markers sont également spécifiques selon la forme de l'Ufo aperçu.
 
+![Android_Map](ImgForDoc/Android_Map.png)
+
 https://user-images.githubusercontent.com/28070766/185214625-e3b83589-dee9-4199-84ce-66e60ac85f20.mp4
 
 
