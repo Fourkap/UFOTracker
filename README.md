@@ -102,7 +102,11 @@ Pour simplifier la complexité de l'utilisateur l'outil permet de prendre la dat
 
 https://user-images.githubusercontent.com/28070766/185207877-ddab0356-b2fa-4c29-a7ad-18c6284c51df.mp4
 
+### Autres fonctionnalités CRUD et autres
 
+Bien entendu l'application permet également la modification et la suppression des déclarations. <br>
+Elle dispose également d'une pagination rattacher a celle de l'Api.
+![Web_Other](ImgForDoc/Web_Other.png)
 
 
 
