@@ -95,6 +95,15 @@ les icones des markers sont spécifique selon la forme de l'Ufo aperçu.
 
 https://user-images.githubusercontent.com/28070766/185203747-1ad9dd7f-c6b8-4a72-9c43-f03777078d92.mp4
 
+### Déclarer un UFO
+L'application permet une déclaration d'une apparition rapidement grâce à son formulaire.
+
+Pour simplifier la complexité de l'utilisateur l'outil permet de prendre la date et l'heure exact de la personne ainsi que sa latitude et sa longitude grâce à la localisation de son naviguateur. 
+
+https://user-images.githubusercontent.com/28070766/185207877-ddab0356-b2fa-4c29-a7ad-18c6284c51df.mp4
+
+
+
 
 
 
