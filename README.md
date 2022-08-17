@@ -1,7 +1,7 @@
 # UfoTracker
 
 Ufo Tracker est un ensemble d'applications développé en C#(.NET) qui permet la déclaration d'un OVNI ou de PAN (phénomènes aérospatiaux non identifiés).
-Ces applications permettent également le suivi de ces phénomènes a parcourir autour de cartes.
+Ces applications permettent également le suivi de ces phénomènes à parcourir autour de cartes.
 
 ---
 
